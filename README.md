@@ -1,11 +1,7 @@
 # SSH-dockerfile
 
 This Dockerfile creates an ssh service inside a docker container
-Image linux = Debian:8 (jessie)
-
-
-![Docker](https://github.com/s1ntaxe770r/SSH-dockerfile/workflows/Docker/badge.svg)
-
+* Image linux = Debian:8 (jessie)
 * default user/password = demo
 
 i also wrote about why you'd want to do this here [here](https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i)
