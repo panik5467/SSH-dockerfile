@@ -1,4 +1,4 @@
-# SSH-dockerfile
+# SSH-dockerfile - Debian:8
 
 This Dockerfile creates an ssh service inside a docker container
 * Image linux = Debian:8 (jessie)
