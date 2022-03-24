@@ -1,17 +1,15 @@
-FROM ubuntu:latest
+FROM debian:8
 
 RUN apt update
 
 RUN apt install  openssh-server sudo -y
 
-RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 test 
+RUN useradd -rm -d /home/debian -s /bin/bash -g root -G sudo -u 1000 demo
 
-RUN usermod -aG sudo test
+RUN usermod -aG sudo demo
 
 RUN service ssh start
 
-RUN  echo 'test:test' | chpasswd
+RUN  echo 'demo:demo' | chpasswd
 
 EXPOSE 22
-
-CMD ["/usr/sbin/sshd","-D"]
