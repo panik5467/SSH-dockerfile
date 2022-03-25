@@ -13,3 +13,5 @@ RUN service ssh start
 RUN  echo 'demo:demo' | chpasswd
 
 EXPOSE 22
+
+CMD ["/usr/sbin/sshd","-D"]
